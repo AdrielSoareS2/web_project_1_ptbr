@@ -4,15 +4,13 @@
   margin: 0 auto;
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-
-
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   position: relative;
   display: flex;
-  background-color: #F2F2F2  ;
+  background-color: #F2F2F2;
 }
 .logo{
   width: 154px;
@@ -229,7 +227,7 @@
 .table__cell_theme_dark {
   row-gap: 80px;
   width: 200px;
-  margin-top: 80px ;
+  margin-top: 80px;
   list-style: none;
   z-index: 3;
 }
