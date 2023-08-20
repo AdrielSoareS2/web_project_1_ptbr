@@ -1,31 +1,319 @@
 .page {
   min-width: 1100px;
-  /* we don't know how to make mobile versions of websites yet, */
-  /* so here we've set a minimum page width */
   max-width: 1600px;
-  /* here we've set a maximum page width */
   margin: 0 auto;
-  /* this ensures that all content is centered on screens wider than 1600px */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
+
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* parameters for the header section */
+  position: relative;
+  display: flex;
+  background-color: #F2F2F2  ;
+}
+.logo{
+  width: 154px;
+  height: 31px;
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  z-index: 0;
+
+}
+.header__title{
+  display: flex;
+  width: 730px;
+  align-items: center;
+  margin-left: 64px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+  z-index: 1;
+}
+.header__subtitle{
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  width: 388px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+.header__link{
+  color: #2F80ED;
 }
 
-/* here we have two examples of selectors in order to remind you how to set styles for elements */
-.header__square-pic {
-  height: 568px;
+.header__main-illustration{
+  width: 756px;
+  height: 608px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+.header__square-pic{
+  background-color: #2F80ED;
   width: 568px;
+  height: 568px;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  z-index: 1;
+  }
+  .description{
+    display: flex;
+    justify-content: center;
+  }
+  .two-columns{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .two-columns__brief{
+    width: 175px;
+    margin-top: 0;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+    color: #4A90EF;
+  }
+.two-columns__main-text{
+  width: 80%;
+  min-width: 784px;
+}
+.two-columns__paragraph{
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 0;
 }
 
-/* including elements with key-value modifiers */
+.two-columns__span-accent{
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.digits{
+  margin-bottom: 100px;
+}
+.section-title{
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+.section-subtitle{
+  width: 60%;
+  margin: 25px auto 60px;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+.table{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 60px;
+  width: 1100px;
+  margin: 0 auto;
+}
+.table__cell{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 250px;
+  list-style: none;
+}
+.table__heading{
+  margin: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+.table__text{
+  margin: 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.feynman{
+  position: relative;
+  height: 790px;
+  background-color: #F2F2F2;
+}
+
+.feynman__title{
+  position: relative;
+  width: 775px;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 1;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  padding-top: 100px;
+}
+.feynman__subtitle{
+  position: relative;
+  margin: 70px auto 0;
+  text-align: center;
+  z-index: 2;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+.feynman__link{
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  color: #4A90EF;
+  text-decoration: none;
+}
+.feynman__image{
+  width: 867px;
+  height: 637px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+.kaufman{
+  position: relative;
+  padding-bottom: 90px;
+  z-index: 5;
+  overflow: hidden;
+  background-color:  #1F1F1F;
+}
+.section-title_theme_dark{
+  color: #ffffff;
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 90px;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  z-index: 4;
+}
+.section-subtitle_theme_dark{
+  color: #ffffff;
+  width: 60%;
+  margin: 20px auto 0;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+
+}
+.table_theme-dark{
+  display: flex;
+  width: 1100px;
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .table__cell_theme_dark {
+  row-gap: 80px;
   width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
+  margin-top: 80px ;
+  list-style: none;
+  z-index: 3;
+}
+.table__heading_theme_dark{
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 2;
+}
+.table__text_theme_dark{
+  color: #ffffff;
+  margin: 0 auto;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  z-index: 1;
+}
+.kaufman__triangle{
+  width: 660px;
+  height: 636px;
+  position: absolute;
+  top: 0;
+  right: -124px;
+  z-index: 0;
+}
+.footer{
+  min-height: 350px;
+  display: flex;
+  background-color: #1F1F1F;
+}
+.footer__columns{
+  width: 90%;
+  margin: 60px auto 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__columns_content_copyright{
+  flex-basis: 711px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.logo_place_footer{
+  width: 183px;
+  height: 35px;
+}
+.footer__author{
+  margin: 0;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #ffffff;
+}
+.footer__columns_content_about{
+  margin: 0 auto;
+}
+.footer__columns_content_social{
+  margin: 0;
+}
+.footer__column-heading{
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.footer__column-link{
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  margin: 0;
+  color: #ffffff;
+}
+.footer__image_social-icons{
+  width: 16px;
+  height: 16px;
+  padding-right: 10px;
 }
