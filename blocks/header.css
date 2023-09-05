@@ -1,0 +1,72 @@
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.header {
+    height: 100vh;
+    min-height: 600px;
+    max-height: 756px;
+    position: relative;
+    display: flex;
+    background-color: #F2F2F2;
+    overflow: hidden;
+  }
+  .logo{
+    width: 154px;
+    height: 31px;
+    position: absolute;
+    top: 30px;
+    left: 64px;
+    z-index: 0;
+  
+  }
+  .header__title{
+    display: flex;
+    width: 730px;
+    align-items: center;
+    margin-left: 64px;
+    line-height: 96px;
+    font-size: 102px;
+    font-weight: bold;
+    z-index: 1;
+  }
+  .header__subtitle{
+    position: absolute;
+    bottom: 30px;
+    left: 64px;
+    width: 388px;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .header__link{
+    color: #2F80ED;
+  }
+  
+  .header__main-illustration{
+    width: 756px;
+    height: 608px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .header__square-pic{
+    background-color: #2F80ED;
+    width: 568px;
+    height: 568px;
+    position: absolute;
+    top: 64px;
+    right: 0;
+    z-index: 1; 
+    }
+
+  .rotation{
+    transform: rotate(0.15turn);
+    animation: rotation 20s linear infinite ;
+  }
