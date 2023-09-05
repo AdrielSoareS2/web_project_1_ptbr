@@ -68,5 +68,5 @@
 
   .rotation{
     transform: rotate(0.15turn);
-    animation: rotation 20s linear infinite ;
+    animation: rotation 20s linear infinite;
   }
