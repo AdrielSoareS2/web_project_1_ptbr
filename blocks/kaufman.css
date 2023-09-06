@@ -44,14 +44,14 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  .table__cell_theme_dark {
+  .table__cell_theme-dark {
     row-gap: 80px;
     width: 200px;
     margin-top: 80px;
     list-style: none;
     z-index: 3;
   }
-  .table__heading_theme_dark{
+  .table__heading_theme-dark{
     color: #ffffff;
     margin-top: 0;
     margin-bottom: 20px;
@@ -60,7 +60,7 @@
     font-weight: bold;
     z-index: 2;
   }
-  .table__text_theme_dark{
+  .table__text_theme-dark{
     color: #ffffff;
     margin: 0 auto;
     line-height: 1.2;
@@ -77,5 +77,5 @@
     z-index: 0;
   }
  .rotation-triangle{  
-    animation: rotation 20s linear infinite;
+    animation: rotation 20s linear infinite ;
 }
