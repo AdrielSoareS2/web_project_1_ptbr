@@ -24,8 +24,11 @@
     display: flex;
     justify-content: center;
     column-gap: 20px;
-    padding-top: 50px;   
+    padding-top: 50px;      
 }
 .video__iframe{
-    margin:  auto;
+    margin:  auto;  
+}
+.video__iframes-video{
+    border: none;
 }
