@@ -4,3 +4,5 @@
  O projeto realizado é baseado num layout, da qual foi feito com linguagens HTML e CSS avançado, usei também alguns elementos que fiquei a conhecer neste novo sprint, como " @import, animation, transform, translate, kayframe, overflow, etc". 
  <br>
  O projeto ainda tem que ser melhorado, para tal, tenho que aprofundar os meus conhecimentos em HTML e CSS.
+
+https://adrielsoares2.github.io/web_project_1_ptbr/
